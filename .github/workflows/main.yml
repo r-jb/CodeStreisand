@@ -1,0 +1,34 @@
+name: Update Archives
+
+on:
+  workflow_dispatch:
+    inputs:
+      to_software_heritage:
+        description: "Upload to Software Heritage"
+        default: "true"
+        required: false
+  schedule:
+    - cron: "0 5 * * *" # Everyday at 05:00 AM
+  push:
+    branches:
+      - "main"
+    paths:
+      - "list.txt"
+
+jobs:
+  update:
+    permissions:
+      contents: write
+    name: Update Archives
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Overwrite options
+        if: github.event_name == 'workflow_dispatch' && (github.event.inputs.to_software_heritage == 'true' || github.event.inputs.to_software_heritage == 'false')
+        run: sed --in-place "s|^SOFTWARE_HERITAGE='.*'|SOFTWARE_HERITAGE='${{ github.event.inputs.to_software_heritage }}'|g" main.sh
+
+      - run: ./main.sh
