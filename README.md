@@ -33,4 +33,4 @@ git clone codestreisand/FILE.bundle
 | 🟩 | [pyhOn](https://github.com/Andre0512/pyhOn) | [Link](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/Andre0512/pyhOn) | 01/02/2024 |
 | 🟩 | [hon-test-data](https://github.com/Andre0512/hon-test-data) | [Link](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/Andre0512/hon-test-data) | 02/02/2024 |
 | 🟩 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | [Link](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/yt-dlp/yt-dlp) | 02/02/2024 |
-| 🟩 | [zspotify](https://github.com/jsavargas/zspotify) | [Link](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/jsavargas/zspotify) | 01/02/2024 |
+| 🟩 | [zspotify](https://github.com/jsavargas/zspotify) | [Link](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/jsavargas/zspotify) | 02/02/2024 |
